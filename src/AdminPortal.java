@@ -3,6 +3,9 @@ import Model.*;
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * Admin portal
+ */
 public class AdminPortal extends Portal{
     private JList usersList;
     private JList foodLists;
@@ -10,7 +13,6 @@ public class AdminPortal extends Portal{
     private JTabbedPane tabs;
     private JButton minusButton;
     private JButton plusButton;
-
 
     public AdminPortal(Admin admin) {
         super(admin);

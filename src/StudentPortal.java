@@ -9,6 +9,11 @@ import java.awt.event.MouseEvent;
 
 public class StudentPortal extends Portal{
     Student student;
+
+    /**
+     * constructor for new portal frame for a student
+     * @param student who login
+     */
     public StudentPortal(Student student) {
         super(student);
         this.student = student;
@@ -16,6 +21,9 @@ public class StudentPortal extends Portal{
         setVisible(true);
     }
 
+    /**
+     * Add additional components for student portal and set settings
+     */
     private void addStudentComponents() {
         JTabbedPane tabs = new JTabbedPane();
         tabs.setFont(Fonts.bTitr);

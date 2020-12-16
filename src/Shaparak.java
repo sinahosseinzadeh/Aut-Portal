@@ -6,7 +6,6 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
 public class Shaparak extends Frame{
-
     private Label label;
     private Student student;
     private Button accept;

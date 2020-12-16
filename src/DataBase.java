@@ -134,7 +134,7 @@ public class DataBase {
 
     /**
      * return if users has an admin
-     * @return 
+     * @return
      */
     public static boolean hasAdmin() {
         for (User user : users)
@@ -147,6 +147,11 @@ public class DataBase {
         return false;
     }
 
+    /**
+     * return if user exists or not
+     * @param username searching user
+     * @return exists?
+     */
     public static boolean hasUser(String username) {
         for (User user : users) {
             if(user.getUsername().toLowerCase().equals(username.toLowerCase()))
@@ -155,6 +160,10 @@ public class DataBase {
         return false;
     }
 
+    /**
+     * get all users in database
+     * @return all users
+     */
     public static ArrayList<User> getUsers() {
         return users;
     }

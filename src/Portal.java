@@ -14,6 +14,10 @@ public abstract class Portal extends Frame{
     private static JMenuItem changeUsername;
     private static JMenuItem changePassword;
 
+    /**
+     * Father of every portal
+     * @param user login user
+     */
     public Portal(User user) {
         super("پرتال");
         Portal.user = user;
@@ -21,6 +25,9 @@ public abstract class Portal extends Frame{
     }
 
 
+    /**
+     * set default settings of portals
+     */
     @Override
     public void setSettings() {
         setLayout(new BorderLayout());
@@ -29,6 +36,9 @@ public abstract class Portal extends Frame{
         setVisible(true);
     }
 
+    /**
+     * make instances
+     */
     @Override
     public void initComponents() {
         topMenu = new JMenuBar();
@@ -54,12 +64,18 @@ public abstract class Portal extends Frame{
         settings.setFont(Fonts.bTitrLarge);
     }
 
+    /**
+     * adding top menu
+     */
     @Override
     public void addComponents() {
         add(topMenu,BorderLayout.NORTH);
 
     }
 
+    /**
+     * add top menu listeners
+     */
     @Override
     public void addListeners() {
         Portal portal = this;
